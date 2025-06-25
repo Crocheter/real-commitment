@@ -22,14 +22,5 @@ const auth = getAuth(app);
 const analytics = getAnalytics(app);
 const provider = new GoogleAuthProvider();
 
-signInWithPopup(auth, provider)
-  .then((result) => {
-    // success
-    const user = result.user;
-    console.log('User signed in:', user);
-  })
-  .catch((error) => {
-    console.error('Google Sign-in error:', error);
-  });
 
 export { auth, provider, signInWithPopup, signOut };

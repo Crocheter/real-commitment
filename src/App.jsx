@@ -16,7 +16,7 @@ function App() {
         {!user ? (
           <Home onSignIn={setUser} />
         ) : (
-          <Dashboard user={dummyUser} onSignOut={() => alert('Logged out')} />
+          <Dashboard user={user} onSignOut={() => alert('Logged out')} />
         )}
       </div>
     </>
